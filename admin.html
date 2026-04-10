@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+        }
+
+        #admin {
+            background-color: #1a252f;
+            background-size: cover;
+            background-position: center center;
+            background-attachment: fixed;
+            height: 100vh; 
+            text-align: center;
+
+            display: flex;      /* Turns on flexbox */
+            flex-direction: column;      /* Stacks the heading and form vertically */
+            justify-content: center;     /* Centers pa vertical sa content (top to bottom) */
+            align-items: center;         /* ipa center ang content pero pa horizontal (left to right) */
+        }
+
+        h1 {
+            color: azure;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        input {
+            padding: 10px;
+            margin: 10px;
+            width: 200px;
+            border-radius: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #2c3e50;
+            color: white;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #1a252f; /* Darkens button when hovered */
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <!-- ADMIN LOGIN -->
+    <section id="admin">
+        <h1>Admin Login</h1>
+        <form>
+            <input type="text" placeholder="Username"><br>
+            <input type="Password" placeholder="Password"><br>
+            <button type="submit">Login</button>
+        </form>
+    </section>
+
+</body>
+</html>
